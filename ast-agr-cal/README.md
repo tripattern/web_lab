@@ -10,6 +10,10 @@ Choices:
 # ✔ Select a variant: › vue-ts
 
 vue add vuetify
+Choices:
+--------
+# Vuetify 3 Preview (Vuetify 3)
+# I did not choose the nightly build
 ```
 
 ## Vue 3 + TypeScript + Vite
