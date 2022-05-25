@@ -51,6 +51,17 @@ npm run test:unit
 npm run lint
 ```
 
+## Adding & Using vuetify
+* Install vuejs cli app
+```
+npm install @vue/cli
+```
+* Install vuetify cli package
+```
+
+./node_modules/.bin/vue add vuetify
+```
+
 ## Notes from main boilerplate page...
 ### Documentation
 Vue’s official documentation provides you with all information you need to get started.
