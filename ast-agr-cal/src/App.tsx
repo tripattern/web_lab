@@ -1,11 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar';
+import NavBar from './components/NavBar';
+import MoonPhase from './components/MoonPhase';
 
 function App() {
     return (
-        <NavBar/>
+        <div>
+            <NavBar/>
+            <MoonPhase/>
+        </div>
     );
 }
 
