@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# aacaltime
+
+## Project Setup
+```
+npx create-react-app aacaltime --template typescript
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+```
+
+
+## Original Readme file
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
