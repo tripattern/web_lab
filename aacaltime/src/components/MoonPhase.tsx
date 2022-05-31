@@ -2,6 +2,9 @@ import Box from '@mui/material/Box';
 import Item from '@mui/material/Box';
 
 function MoonPhase() {
+    const myDate: Date = new Date();
+    console.log("local system gregorian date and time is =" + myDate);
+    console.log("Month: " + myDate.getMonth());
     return (
         <div>
             <Box sx={{m: 2}}/>
@@ -22,12 +25,6 @@ function MoonPhase() {
                         alt="The house from the offer."
                         src="https://openclipart.org/image/400px/119833"
                     />
-                </Item>
-                <Item></Item>
-            </Box>
-            <Box sx={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', textAlign: 'center'}}>
-                <Item></Item>
-                <Item>
                     <Box sx={{m: 5}}/>
                     <div><b>Information</b></div>
                     <Box sx={{m: 2}}/>
@@ -45,7 +42,6 @@ function MoonPhase() {
                 </Item>
                 <Item></Item>
             </Box>
-
         </div>
     );
 }
