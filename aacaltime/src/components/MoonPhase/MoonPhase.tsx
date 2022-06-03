@@ -1,10 +1,10 @@
 import Box from '@mui/material/Box';
 import Item from '@mui/material/Box';
+import {GetHebrewDateAsStringFromUTC} from "../../utils/DateTimeHelpers";
+
 
 function MoonPhase() {
-    const myDate: Date = new Date();
-    console.log("local system gregorian date and time is =" + myDate);
-    console.log("Month: " + myDate.getMonth());
+    const myHebDate: string = GetHebrewDateAsStringFromUTC();
     return (
         <div>
             <Box sx={{m: 2}}/>
@@ -22,23 +22,13 @@ function MoonPhase() {
                             maxHeight: {xs: 150, md: 250},
                             maxWidth: {xs: 150, md: 250},
                         }}
-                        alt="The house from the offer."
+                        alt="The phase of the moon."
                         src="https://openclipart.org/image/400px/119833"
                     />
                     <Box sx={{m: 5}}/>
-                    <div><b>Information</b></div>
+                    <div><b>Date in Jerusalem</b></div>
                     <Box sx={{m: 2}}/>
-                    <Box
-                        component="img"
-                        sx={{
-                            mx: "auto",
-                            height: 350,
-                            width: 450,
-                        }}
-                        alt="The house from the offer."
-                        src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Moon_Phase_Diagram_for_Simple_English_Wikipedia.GIF"
-                    />
-                    <div>Reference: https://simple.wikipedia.org/wiki/Phases_of_the_Moon</div>
+                    <div><b>{myHebDate}</b></div>
                 </Item>
                 <Item></Item>
             </Box>
