@@ -4,6 +4,6 @@ import MoonPhase from "./MoonPhase";
 
 test('renders learn react link', () => {
     render(<MoonPhase/>);
-    const linkElement = screen.getByText(/Date in Jerusalem/i);
+    const linkElement = screen.getByText(/Jerusalem/i);
     expect(linkElement).toBeInTheDocument();
 });

@@ -1,10 +1,11 @@
 import Box from '@mui/material/Box';
 import Item from '@mui/material/Box';
-import {GetHebrewDateAsStringFromUTC} from "../../utils/DateTimeHelpers";
+import {GetCorrectedGregorianDateAsString} from "../../utils/DateTimeHelpers";
+import MoonImage from '../../assets/moon_4.png';
 
+const myHebDate: string = GetCorrectedGregorianDateAsString(new Date());
 
 function MoonPhase() {
-    const myHebDate: string = GetHebrewDateAsStringFromUTC();
     return (
         <div>
             <Box sx={{m: 2}}/>
@@ -23,10 +24,10 @@ function MoonPhase() {
                             maxWidth: {xs: 150, md: 250},
                         }}
                         alt="The phase of the moon."
-                        src="https://openclipart.org/image/400px/119833"
+                        src={MoonImage}
                     />
                     <Box sx={{m: 5}}/>
-                    <div><b>Date in Jerusalem</b></div>
+                    <div><b>Jerusalem</b></div>
                     <Box sx={{m: 2}}/>
                     <div><b>{myHebDate}</b></div>
                 </Item>
@@ -35,5 +36,6 @@ function MoonPhase() {
         </div>
     );
 }
+
 //                    https://openclipart.org/search/?query=moonphase
 export default MoonPhase;

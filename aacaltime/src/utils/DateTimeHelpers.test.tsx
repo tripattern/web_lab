@@ -1,5 +1,5 @@
-import {GetHebrewDateAsStringFromUTC} from "./DateTimeHelpers";
+import {GetCorrectedGregorianDateAsString} from "./DateTimeHelpers";
 
 test('renders learn react link', () => {
-    expect(GetHebrewDateAsStringFromUTC()).toMatch('12th of the 3rd Month (Nisan)');
+    expect(GetCorrectedGregorianDateAsString(new Date('2022-06-09'))).toMatch('2022-06-09');
 });
