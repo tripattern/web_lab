@@ -10,7 +10,6 @@ function NavBar() {
         <Box sx={{flexGrow: 1}}>
             <AppBar position="static">
                 <Toolbar>
-
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
                         <b>AA-Calendar-Time</b>
                     </Typography>
