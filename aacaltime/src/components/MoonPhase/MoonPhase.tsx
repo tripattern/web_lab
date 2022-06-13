@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Item from '@mui/material/Box';
-import {GetCorrectedGregorianDateAsString} from "../../utils/DateTimeHelpers";
+import {GetCorrectedGregorianDateAsString} from "../../utils/DateTimeHelpers/DateTimeHelpers";
 import MoonImage from '../../assets/moon_4.png';
 
 const myHebDate: string = GetCorrectedGregorianDateAsString(new Date());
