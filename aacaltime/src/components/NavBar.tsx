@@ -11,7 +11,7 @@ function NavBar() {
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" component="div" sx={{flexGrow: 1}}>
-                        <b>AA-Calendar-Time</b>
+                        <b>aa-time</b>
                     </Typography>
                     <IconButton
                         size="large"
