@@ -6,3 +6,8 @@ export function GetCorrectedGregorianDateAsString(myDate: Date): string {
     console.log(myDate.getUTCFullYear().toString() + "-" + realMonthWithLeadingZero + "-" + realDayWithLeadingZero);
     return myDate.getUTCFullYear().toString() + "-" + realMonthWithLeadingZero + "-" + realDayWithLeadingZero;
 }
+
+export function GetDayNumberAsString(myDate: Date): string {
+    const bibDayNumber: number = myDate.getUTCDay() + 1;
+    return '0' + String(bibDayNumber);
+}
